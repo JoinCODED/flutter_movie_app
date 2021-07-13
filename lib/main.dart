@@ -57,13 +57,27 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Expanded(
                   child: Container(
-                    padding: EdgeInsets.all(20),
-                    child: Text(
-                      movies[index].name,
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
-                        fontSize: 18,
-                      ),
+                    alignment: Alignment.centerLeft,
+                    padding: EdgeInsets.all(10),
+                    child: Column(
+                      children: [
+                        Text(
+                          '${movies[index].name}',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            fontSize: 18,
+                          ),
+                        ),
+                        Container(height: 10),
+                        Text(
+                          'Rating: ${movies[index].rating}/10',
+                          style: TextStyle(
+                            fontWeight: FontWeight.bold,
+                            color: Colors.grey[700],
+                            fontSize: 14,
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                 ),
