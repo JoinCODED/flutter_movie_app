@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movie_app/movie.dart';
 
 void main() {
   runApp(MyApp());
@@ -25,29 +26,16 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List movies = [
-    'Toy Story',
-    'Spider Man',
-    'Inside out',
-    'The LEGO Movie',
-    'The Lion King',
-    'Frozen',
-    'Shrek',
-    'BIG HERO',
-    'ICE AGE',
-    'BRAVE',
-  ];
-
-  List imgPaths = [
-    'assets/toy_story.jpeg',
-    'assets/spider_man.jpeg',
-    'assets/inside_out.jpeg',
-    'assets/lego.jpeg',
-    'assets/lion_king.jpeg',
-    'assets/frozen.jpeg',
-    'assets/shrek.jpeg',
-    'assets/big_hero.jpeg',
-    'assets/ice_age.jpeg',
-    'assets/brave.jpeg',
+    Movie(name: 'Toy Story', imgPath: 'assets/toy_story.jpeg', rating: 4),
+    Movie(name: 'Spider Man', imgPath: 'assets/spider_man.jpeg', rating: 5),
+    Movie(name: 'Inside out', imgPath: 'assets/inside_out.jpeg', rating: 0.2),
+    Movie(name: 'The LEGO Movie', imgPath: 'assets/lego.jpeg', rating: 0.2),
+    Movie(name: 'The Lion King', imgPath: 'assets/lion_king.jpeg', rating: 0.2),
+    Movie(name: 'Frozen', imgPath: 'assets/frozen.jpeg', rating: 0.2),
+    Movie(name: 'Shrek', imgPath: 'assets/shrek.jpeg', rating: 0.2),
+    Movie(name: 'BIG HERO', imgPath: 'assets/big_hero.jpeg', rating: 0.2),
+    Movie(name: 'ICE AGE', imgPath: 'assets/ice_age.jpeg', rating: 0.2),
+    Movie(name: 'BRAVE', imgPath: 'assets/brave.jpeg', rating: 0.2),
   ];
 
   @override
@@ -71,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                   child: Container(
                     padding: EdgeInsets.all(20),
                     child: Text(
-                      movies[index],
+                      movies[index].name,
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
                         fontSize: 18,
@@ -82,11 +70,11 @@ class _HomePageState extends State<HomePage> {
                 Container(
                   padding: EdgeInsets.all(10),
                   child: Image.asset(
-                    imgPaths[index],
+                    movies[index].imgPath,
                     width: 125,
                     height: 125,
                   ),
-                )
+                ),
               ],
             ),
           );
