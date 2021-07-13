@@ -1,16 +1,39 @@
-# movie_app
+# Movie APP
 
-A new Flutter project.
 
-## Getting Started
+## Screenshots
+<img src="https://user-images.githubusercontent.com/24327781/125430420-403d4e65-60ed-47fc-9908-7248aa03a7ca.gif" width="250" />
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## Demo
+  soon
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- ### iOS
+    <img src="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/pwa.png" width="30" /> [steps](https://github.com/Northwest-content/flutter_demos#----progressive-web-apps-)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+- ### Android
+  APK (soon..)
+
+
+## Installing
+
+|  | version |  
+| :---: | :---: | 
+| Dart | 2.12.0 |
+| Flutter |  2.2.3 |
+
+
+  ```
+  $ flutter pub get
+  
+  $ flutter run
+  ```
+  
+  
+## License
+
+    Copyright 2021 - Coded
+
+    Licensed under .......
