@@ -57,7 +57,6 @@ class _HomePageState extends State<HomePage> {
               children: [
                 Expanded(
                   child: Container(
-                    alignment: Alignment.centerLeft,
                     padding: EdgeInsets.all(10),
                     child: Column(
                       children: [
