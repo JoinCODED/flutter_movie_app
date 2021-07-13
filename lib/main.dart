@@ -26,16 +26,16 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   List movies = [
-    Movie(name: 'Toy Story', imgPath: 'assets/toy_story.jpeg', rating: 4),
+    Movie(name: 'Toy Story', imgPath: 'assets/toy_story.jpeg', rating: 8),
     Movie(name: 'Spider Man', imgPath: 'assets/spider_man.jpeg', rating: 5),
-    Movie(name: 'Inside out', imgPath: 'assets/inside_out.jpeg', rating: 0.2),
-    Movie(name: 'The LEGO Movie', imgPath: 'assets/lego.jpeg', rating: 0.2),
-    Movie(name: 'The Lion King', imgPath: 'assets/lion_king.jpeg', rating: 0.2),
-    Movie(name: 'Frozen', imgPath: 'assets/frozen.jpeg', rating: 0.2),
-    Movie(name: 'Shrek', imgPath: 'assets/shrek.jpeg', rating: 0.2),
-    Movie(name: 'BIG HERO', imgPath: 'assets/big_hero.jpeg', rating: 0.2),
-    Movie(name: 'ICE AGE', imgPath: 'assets/ice_age.jpeg', rating: 0.2),
-    Movie(name: 'BRAVE', imgPath: 'assets/brave.jpeg', rating: 0.2),
+    Movie(name: 'Inside out', imgPath: 'assets/inside_out.jpeg', rating: 7),
+    Movie(name: 'The LEGO Movie', imgPath: 'assets/lego.jpeg', rating: 5.5),
+    Movie(name: 'The Lion King', imgPath: 'assets/lion_king.jpeg', rating: 9),
+    Movie(name: 'Frozen', imgPath: 'assets/frozen.jpeg', rating: 4.5),
+    Movie(name: 'Shrek', imgPath: 'assets/shrek.jpeg', rating: 8.5),
+    Movie(name: 'BIG HERO', imgPath: 'assets/big_hero.jpeg', rating: 8),
+    Movie(name: 'ICE AGE', imgPath: 'assets/ice_age.jpeg', rating: 7.5),
+    Movie(name: 'BRAVE', imgPath: 'assets/brave.jpeg', rating: 7),
   ];
 
   @override
